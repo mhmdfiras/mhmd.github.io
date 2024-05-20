@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Swift Care Hospital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            border-bottom: 3px solid #023047;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+
+        main {
+            padding: 20px;
+            color: #023047;
+        }
+
+        section {
+            background-color: #8ecae6;
+            padding: 20px;
+            margin-bottom: 20px; /* corrected property */
+            border-radius: 10px; /* corrected property */
+        }
+
+        img {
+            border: 4px solid #ffb703;
+        }
+
+        footer {
+            background-color: #023047;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var serviceLink = document.querySelector('nav a[href="4.html"]');
+            serviceLink.addEventListener('click', function(event) {
+                if (window.location.pathname.includes('4.html')) { // Check if the current page is 'Services'
+                    event.preventDefault(); // Prevents the link from navigating
+                    alert("You are already on the Services page.");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Swift Care Hospital Services</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="4.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="appoinfinal.html">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Emergency Department</h2>
+            <p>Our Emergency Department provides immediate medical care 24/7, specializing in pediatric emergencies. We ensure your child receives the best care during critical times. Regular check-ups and specialty clinics are also available to effectively manage your child's health.</p>
+            <img src="10.jpg" alt="Emergency Department" width="400" height="400">
+        </section>
+
+        <section>
+            <h2>Department of Surgery</h2>
+            <p>The Department of Surgery features state-of-the-art facilities, skilled surgeons, and comprehensive care, encompassing a wide range of surgical specialties. Services include:</p>
+            <ul>
+                <li>Advanced surgical technology</li>
+                <li>Pre and post-operative care</li>
+            </ul>
+            <img src="16.jpg" alt="Surgery Department" width="400" height="400">
+        </section>
+
+        <section>
+            <h2>Cardiology Department</h2>
+            <p>Specializing in diagnosing and treating heart conditions in children, our Cardiology Department offers services in fetal cardiology and conducts innovative research to advance pediatric cardiology.</p>
+            <img src="12.jpg" alt="Cardiology Department" width="400" height="400">
+        </section>
+
+        <section>
+            <h2>Oncology Department</h2>
+            <p>Our Oncology Department offers comprehensive cancer care, including advanced diagnostics, varied treatment modalities, and extensive support services to ensure holistic care.</p>
+            <img src="13.JPG" alt="Oncology Department" width="400" height="400">
+        </section>
+
+        <section>
+            <h2>Pediatrics Department</h2>
+            <p>Our Pediatrics Department provides dedicated care from infancy through adolescence, including routine check-ups, emergency care, and specialty clinics.</p>
+            <img src="15.jpg" alt="Pediatrics Department" width="400" height="400">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Swift Care Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
