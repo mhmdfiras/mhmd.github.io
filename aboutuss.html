@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Swift Care Hospital</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            border-bottom: 3px solid #023047;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var aboutLink = document.querySelector('nav a[href="aboutus.html"]');
+            aboutLink.addEventListener('click', function(event) {
+                if (window.location.pathname.includes('aboutus.html')) { // Check if the current page is 'About Us'
+                    event.preventDefault(); // Prevents the link from navigating
+                    alert("You are already on the About Us page.");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>JEWEL HOSPITAL</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="4.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="appoinfinal.html">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <h3>About Us</h3>
+    </header>
+    <section>
+        <h2>About the hospital</h2>
+        <p>The hospital was established in 1978 AD, as it includes all departments and was serving more than 2,000,000 patients. The hospital is distinguished by speed of service, ease of payment, and comfort and relaxation for the patient. The hospital has received many awards, the most important of which is the award for recognition of the quality of health care and distinction in child care. Discrimination in surgeries and emergencies</p>
+        <img class="hospital-image" src="Jewelh.webp" alt="jewel Hospital">
+        <p>The profession of a doctor is a humanitarian profession, and it is one of the professions that occupies a high position in society, and most people want to be doctors, because of the status of the medical profession, its benefits, and the social respect and great acceptance it brings to its practitioner among people, which makes them view this job title with admiration and distinction.</p>
+    </section>
+    <header>
+        <h1>Meet the Most Our Doctors at Hospital</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Dr. Wareef al Manaseer</h2>
+            <p>Dr. Wareef al Manaseer is a board-certified cardiologist with over 15 years of experience in treating heart diseases. She received her medical degree from Harvard Medical School and completed her residency at Johns Hopkins Hospital. Dr. Wareef is known for her compassionate care and dedication to her patients.</p>
+        </article>
+        <article>
+            <h2>Dr. Jameel Alsayouri</h2>
+            <p>Dr. Jameel Alsayouri is a skilled neurosurgeon specializing in complex brain and spinal surgeries. He earned his medical degree from Stanford University School of Medicine and completed his fellowship at Mayo Clinic. Dr. Jameel is committed to providing the highest level of care to his patients.</p>
+        </article>
+        <article>
+            <h2>Dr. Mohammad Hasan</h2>
+            <p>Dr. Mohammad Hasan is an esteemed pediatrician known for his expertise in child healthcare. He graduated from Columbia University College of Physicians and Surgeons and completed his residency at Children's Hospital of Philadelphia. Dr. Mohammad is passionate about promoting the well-being of children and adolescents.</p>
+        </article>
+        <img class="hospital-image" src="Hospital.jpg" alt="Swift Care Hospital">
+    </section>
+    <footer>
+        &copy; 2024 Swift Care Hospital. All rights reserved.
+    </footer>
+</body>
+</html>
