@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Jewel Hospital</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin: auto;
+        width: 80%;
+        max-width: 600px;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    h1 {
+        color: #34495e;
+    }
+    a {
+        color: #2980b9;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #34495e;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    textarea {
+        height: 120px;
+    }
+    button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+    .social-links {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .social-links a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .social-links a img {
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>JEWEL HOSPITAL</h1>
+       
+    </header>
+<div class="container">
+    <header>
+        
+        <h1>Contact Us</h1> 
+            
+               
+                        
+        
+        <p>Feel free to contact Jewel Hospital through the following platforms:</p>
+    </header>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+    <div class="social-links">
+        <a href="tel:+962795151152"><img src="call.webp" alt="Call"></a>
+        <a href="mailto:obeidat1001@gmail.com"><img src="email.png" alt="Email"></a>
+        <a href="https://www.facebook.com/pages/Jewel-Hospital/202212200281970"><img src="facebook.png" alt="facebook"></a>
+        <a href="https://x.com/Jewel_Rayner/status/1309619190760968194"><img src="x.png" alt="Twitter"></a>
+        <a href="https://api.whatsapp.com/send?phone=962795151152"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/mhmdfiras01/"><img src="insta.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/jewelhospital"><img src="linked.png.crdownload" alt="LinkedIn"></a>
+        <a href="https://www.pinterest.com/jewelhospital"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://www.youtube.com/channel/jewelhospital"><img src="youtube.png" alt="YouTube"></a>
+        <a href="home.html"> <h3>Return To Home</h3></a>
+    </div>
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for contacting us, ' + document.getElementById('name').value +     "we will try to respond as soon as possible"+'!' );
+});
+</script>
+
+</body>
+</html>
