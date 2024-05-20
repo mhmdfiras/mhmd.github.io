@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Swift Care Hospital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            border-bottom: 3px solid #023047;
+        }
+
+        nav {
+            background-color: #023e8a;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+
+        .review {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .hospital-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #023047;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .review-form {
+            background-color: white;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .review-form textarea, .review-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .review-form input[type="submit"] {
+            background-color: #023e8a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .review-form input[type="submit"]:hover {
+            background-color: #021e40;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Customer Reviews</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="4.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="appoinfinal.html">appointment</a></li>
+        </ul>
+    </nav>
+    <div class="review-form">
+        <h3>Write Your Review:</h3>
+        <form id="reviewForm" action="submit_review.php" method="POST">
+            <textarea name="customer_review" rows="4" cols="50" placeholder="Enter your review here..."></textarea><br>
+            <input type="submit" value="Submit Review">
+        </form>
+    </div>
+    
+    <div class="review">
+        <h3>Positive Review:</h3>
+        <p>"My experience at Jewel Hospital was exceptional. The staff were attentive, compassionate, and knowledgeable. The facilities were clean and well-maintained, and I felt like I was in good hands throughout my stay. I would highly recommend Jewel Hospital to anyone in need of medical care."</p>
+        <img src="check.jpg" alt="Emergency Department" width="90" height="90">
+    </div>
+
+    <div class="review">
+        <h3>Negative Review:</h3>    
+        <p>"I had a disappointing experience at Jewel Hospital. The wait times were excessively long, and the staff seemed overwhelmed and disorganized. Additionally, the facilities appeared outdated and in need of renovation. Overall, I was not satisfied with the level of care I received and would hesitate to return in the future."</p>
+        <img src="xxx.png" alt="Emergency Department" width="90" height="90">
+    </div>
+
+    <div class="review">
+        <h3>Mixed Review:</h3> 
+        <p>"My time at Jewel Hospital was a mixed bag. While some aspects of my care were excellent, such as the expertise of the medical team and the efficiency of certain departments, there were also notable shortcomings. Communication between staff and patients could be improved, and the facilities felt somewhat cramped and lacking in amenities. Ultimately, my opinion is somewhat divided, but I would consider returning for certain services."</p>
+        <img src="3st.webp" alt="Emergency Department" width="200" height="200">
+    </div>
+
+    <footer>
+        &copy; 2024 Swift Care Hospital. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('reviewForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                alert('Thank you for your review! It has been submitted.');
+                // Optionally submit the form programmatically if needed:
+                // form.submit();
+            });
+        });
+    </script>
+</body>
+</html>
